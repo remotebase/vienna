@@ -41,14 +41,19 @@
   {{ end }}
 </head>
 <body>
-    <header class="global-header"  style="background-image:url({{ if isset .Params "image" }}{{ .Params.image }} {{ else }} /images/bg.jpg {{ end }})">
+  <header class="global-header">
     <section class="header-text">
-      <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-      {{ with .Site.Params.subtitle }}
+      <h1>
+        <a href="{{ .Site.BaseURL }}">
+          <img src="/logo.png" alt="remotebase" class="main-logo">
+          <div class="brand">
+            {{ .Site.Title }}
+          </div>
+        </a>
+      </h1>
       <div class="tag-line">
-        {{ . }}
+        Stories about remote work and how <a href="https://remotebase.io">RemoteBase</a> is being built
       </div>
-      {{ end }}
       {{ partial "link.html" . }}
       {{ if ne .URL "/" }}
       <a href="{{ .Site.BaseURL }}" class="btn-header btn-back hidden-xs">

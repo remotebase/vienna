@@ -8,6 +8,16 @@ main {
 .global-header {
     background: #222 no-repeat center center;
     background-size: cover;
+    text-align: center;
+}
+
+.brand {
+  font-size: 0.8em;
+}
+
+.main-logo {
+  width: 129px;
+  margin-bottom: 19px;
 }
 
 .header-text {
@@ -16,15 +26,22 @@ main {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     color: rgba(255, 255, 255, 0.9);
+    padding-top: 16px;
 }
 
 .header-text .tag-line {
     margin: 10px auto;
     padding: 0 10px;
-    max-width: 430px;
+    /*max-width: 462px;*/
+    font-size: 1.2em;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
     font-weight: 300;
+}
+
+.header-text .tag-line a {
+  color: white;
+  text-decoration: underline;
 }
 
 .header-text .sns-links {
@@ -286,4 +303,3 @@ article section img {
     height: auto;
     margin: 13px auto;
 }
-
